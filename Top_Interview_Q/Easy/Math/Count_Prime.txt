@@ -1,0 +1,13 @@
+class Solution:
+    def countPrimes(self, n: int) -> int:
+        L = [True]*n
+        num_prime = 0
+        for i in range(2,len(L)):
+            if(L[i]):
+                num_prime += 1
+                product = 2
+                while(product * i < n):
+                    L[product * i] = False
+                    product += 1
+                #print(i)
+        return num_prime
