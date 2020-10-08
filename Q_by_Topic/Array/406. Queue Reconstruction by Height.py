@@ -20,6 +20,7 @@ class Solution:
                     num_p_in_front -= 1
 
             print(Line)
+        return Line
         
                 
         
