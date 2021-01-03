@@ -1,5 +1,5 @@
 class Solution:
-    def findUnsortedSubarray(self, nums: List[int]) -> int:
+    def findUnsortedSubarray(self, nums) -> int:
         start = None
         end = None
         
@@ -21,5 +21,10 @@ class Solution:
         
         if(start == None):
             return 0
+        print(start, "|", end)
         return end-start+1
-                
+
+
+nums = [1,3,5,7,9,100,98,2,1000]                
+sol = Solution()
+print(sol.findUnsortedSubarray(nums))
