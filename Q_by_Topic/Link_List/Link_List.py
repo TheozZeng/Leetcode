@@ -20,8 +20,9 @@ def print_link_list(node):
     ptr = node
     while(ptr != None):
         print(ptr.val, end="->")
+        ptr = ptr.next
     print("None")
 
 L = [0,1,2,3,4,5,6,7,8]
-head = init_link_list(L)
-print_link_list(head)
+#head = init_link_list(L)
+#print_link_list(head)

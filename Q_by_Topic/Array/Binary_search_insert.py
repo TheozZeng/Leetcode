@@ -15,6 +15,6 @@ class Solution:
         return i
 
 nums = [1,3,5,6]
-target = 2
+target = 19
 sol = Solution()
 print(sol.searchInsert(nums,target))
